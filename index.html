@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Chess</title>
+</head>
+<body>
+
+    <dialog id = "inputDialog">
+        <form method="dialog">
+            <p id = "numberOfPlayers">
+                <label>Number of Players:
+                    <select onchange="numOfPlayersChange()">
+                        <option>1 Player (play against computer)</option>
+                        <option>2 Players</option>
+                    </select>
+                </label>
+            </p>
+            
+            <p id = "difficulty">
+                <label>Select Difficulty
+                    <select>
+                        <option>Easy</option>
+                        <option>Medium</option>
+                        <option>Hard</option>
+                    </select>    
+                </label>
+            </p>
+
+            <menu>
+                <button onclick="getUserInput()">Start</button>
+            </menu>
+        </form>
+    </dialog>
+
+    <div id="chessBoard">
+    </div>
+
+    <script src="js/game.js"></script>
+    <script src="js/pieces.js"></script>
+    <script src="js/handlers.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/AI.js"></script>
+</body>
+
+</html>

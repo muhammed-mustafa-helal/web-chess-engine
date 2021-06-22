@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    padding-top: 100px;
+}
+#chessBoard{
+    padding: 0px;
+    margin: auto;
+    width: 480px;
+    height: 480px;
+    border: 2px solid black;
+}
+
+.square{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+.square:hover{
+    background-color: orange;    
+}
+
+.white{
+    background-color: white;
+}
+
+.black{
+    background-color: rgb(155, 151, 151);
+}
+
+.suggestedMove{
+    background-color:lightseagreen;
+    opacity: 0.5;
+}
+
+#inputDialog{
+    text-align: left;
+}
